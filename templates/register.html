@@ -1,0 +1,30 @@
+{% extends "layout.html"%}
+{% block body %}
+<div class="container">
+	<h1> Register</h1>
+	<form action="" method="POST">
+		<div class="form-group">
+			<input type="text" name="name" class="form-control" placeholder="name" required>
+		</div>
+		<div class="form-group">
+			<input type="text" name="username" class="form-control" placeholder="username" required>
+		</div>
+		<div class="form-group">
+			<input type="password" name="password" class="form-control" placeholder="password" required>
+		</div>
+		<div class="form-group">
+			<input type="password" name="confirm" class="form-control" placeholder="confirm password" required>
+		</div>
+		<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="btn btn-primary">Register</button>
+    <div class="container signin">
+    <p>Already have an account? <a href="/login">Sign in</a>.</p>
+  </div>
+	</form>
+
+</div>
+{% endblock %}
+
+
+
+
